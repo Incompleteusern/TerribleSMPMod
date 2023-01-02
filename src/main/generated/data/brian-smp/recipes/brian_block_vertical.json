@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "BRIAN_BLOCK",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_ice"
+    },
+    "S": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "pattern": [
+    "B",
+    "S",
+    "B"
+  ],
+  "result": {
+    "item": "brian-smp:brian_block"
+  }
+}

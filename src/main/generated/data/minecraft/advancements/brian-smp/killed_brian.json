@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "killed_brian": {
+      "conditions": {},
+      "trigger": "brian-smp:killed_brian"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "text": "Kill Brian while wearing a gold chestplate."
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Life of Brian"
+    }
+  },
+  "requirements": [
+    [
+      "killed_brian"
+    ]
+  ]
+}

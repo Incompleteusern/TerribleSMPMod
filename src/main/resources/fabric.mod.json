@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "brian-smp",
+  "version": "${version}",
+
+  "name": "Brian SMP Mod",
+  "description": "Brian is an amazing person!",
+  "authors": [
+    "Incompleteusern"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/brian-smp/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.Incompleteusern.BrianSMP.common.datagen.BrianSMPDataGen"
+    ],
+    "main": [
+      "me.Incompleteusern.BrianSMP.common.BrianSMPMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

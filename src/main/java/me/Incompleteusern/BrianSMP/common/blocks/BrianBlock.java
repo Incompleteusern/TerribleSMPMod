@@ -3,13 +3,18 @@ package me.Incompleteusern.BrianSMP.common.blocks;
 import me.Incompleteusern.BrianSMP.util.Utils;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 
 public class BrianBlock extends Block {
 
@@ -43,11 +48,21 @@ public class BrianBlock extends Block {
     private void bounce(Entity entity) {
         Vec3d vec3d = entity.getVelocity();
         if (vec3d.y < 0.0) {
-            double d = entity instanceof LivingEntity ? 1.4 : 0.8;
+            double d = entity instanceof LivingEntity ? 1.0 : 0.8;
             entity.setVelocity(vec3d.x, -vec3d.y * d, vec3d.z);
         }
-
     }
+
+    @Override
+    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack, boolean dropExperience) {
+        if (dropExperience && EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {
+            int i = world.random.nextBetween(5, 10);
+            if (i > 0) {
+                this.dropExperience(world, pos, i);
+            }
+        }
+    }
+
 
     /*
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "brian-smp",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Brian SMP Mod",
+  "description": "Brian is an amazing person!",
   "authors": [
-    "Me!"
+    "Incompleteusern"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.Incompleteusern.BrianSMP.common.BrianSMPMod"
     ]
   },
   "mixins": [

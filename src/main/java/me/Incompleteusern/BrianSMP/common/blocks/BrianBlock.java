@@ -47,7 +47,7 @@ public class BrianBlock extends Block {
     private void bounce(Entity entity) {
         Vec3d vec3d = entity.getVelocity();
         if (vec3d.y < 0.0) {
-            double d = entity instanceof LivingEntity ? 1.0 : 0.8;
+            double d = entity instanceof LivingEntity ? 0.9 : 0.7;
             entity.setVelocity(vec3d.x, -vec3d.y * d, vec3d.z);
         }
     }

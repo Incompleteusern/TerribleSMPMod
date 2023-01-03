@@ -10,10 +10,8 @@ jobs:
   build:
     strategy:
       matrix:
-        # Use these Java versions
         java: [17]
-        # and run on both Linux and Windows
-        os: [ubuntu-22.04]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - name: checkout repository
@@ -38,11 +36,14 @@ jobs:
       - name: build
         run: ./gradlew build
 
-      - name: Get Short SHA
+      - name: Get SHA
         run: echo "SHA=`echo ${GITHUB_SHA}`" >> $GITHUB_ENV
+
+      - name: Get Version
+        run: echo "MOD_VERSION=`grep 'mod_version' ./gradle.properties | awk -F ' = ' '{print $2}'`" >> $GITHUB_ENV
 
       - name: capture build artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: "[${{ env.SHA }}]BrianSMPMod.zip"
+          name: "[${{ env.SHA }}][${{ env.MOD_VERSION }}] BrianSMPMod.zip"
           path: build/libs/

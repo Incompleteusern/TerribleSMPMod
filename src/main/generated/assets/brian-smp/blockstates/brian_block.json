@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "brian-smp:block/brian_block"
+    }
+  }
+}

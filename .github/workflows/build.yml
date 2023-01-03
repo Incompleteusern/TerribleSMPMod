@@ -47,3 +47,9 @@ jobs:
         with:
           name: "[${{ env.SHA }}][${{ env.MOD_VERSION }}] BrianSMPMod.zip"
           path: build/libs/
+        
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build/libs/ # The folder the action should deploy.
+

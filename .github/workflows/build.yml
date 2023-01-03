@@ -48,8 +48,11 @@ jobs:
           name: "[${{ env.SHA }}][${{ env.MOD_VERSION }}] BrianSMPMod.zip"
           path: build/libs/
         
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Create a Release
+        uses: elgohr/Github-Release-Action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          folder: build/libs/ # The folder the action should deploy.
+          title: MyReleaseMessage
+
 

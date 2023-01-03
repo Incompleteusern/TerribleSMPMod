@@ -48,12 +48,22 @@ jobs:
           name: "[${{ env.SHA }}][${{ env.MOD_VERSION }}] BrianSMPMod.zip"
           path: build/libs/
         
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Create release
+        id: release
+        uses: softprops/action-gh-release@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          title: "Development Build"
+          tag_name: "latest"
+          draft: true
+          prerelease: true
+
+      - name: Upload files to release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ needs.changelog.outputs.tag }}
+          draft: true
+          prerelease: true
           files: |
-            *.jar
+            **/build/libs/*-fabric.jar
+
 
 

@@ -22,15 +22,13 @@ public class BrianSMPItems {
         BRIAN_ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(BrianSMPMod.MODID, "brian_group"),
                 Utils::getBrianSkull);
 
-
-        // One Golden apple + 4 water bottles -> Apple juice=
         APPLE_JUICE = registerItem(new AppleJuice(
                 new Item.Settings()
                         .group(BRIAN_ITEM_GROUP)
                         .food(
                                 new FoodComponent.Builder()
                                         .hunger(6).saturationModifier(0.4F)
-                                        .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 50, 4), 1.0F)
+                                        .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40, 5), 1.0F)
                                         .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 600, 0), 0.5F)
                                         .snack().alwaysEdible()
                                         .build()

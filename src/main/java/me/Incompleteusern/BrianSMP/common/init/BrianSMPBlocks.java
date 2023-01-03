@@ -2,15 +2,12 @@ package me.Incompleteusern.BrianSMP.common.init;
 
 import me.Incompleteusern.BrianSMP.common.BrianSMPMod;
 import me.Incompleteusern.BrianSMP.common.blocks.BrianBlock;
-import me.Incompleteusern.BrianSMP.util.Utils;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class BrianSMPBlocks {

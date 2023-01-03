@@ -32,9 +32,8 @@ jobs:
         
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-        
-      - name: Build
-        run: ./gradlew build
+        with:
+          arguments: buildDependents -x spotlessCheck
 
       - name: Get SHA
         run: echo "SHA=`echo ${GITHUB_SHA}`" >> $GITHUB_ENV
@@ -45,8 +44,9 @@ jobs:
       - name: capture build artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: "[${{ env.SHA }}][${{ env.MOD_VERSION }}] BrianSMPMod.zip"
-          path: build/libs/
+          path: |
+            **/build/libs/*-fabric.jar
+          if-no-files-found: error
         
       - name: Create release
         id: release
@@ -54,6 +54,7 @@ jobs:
         with:
           tag_name: "latest"
           draft: true
+          body: "SHA of [${{ env.SHA }}] and version [${{ env.MOD_VERSION }}]"
           prerelease: true
 
       - name: Upload files to release

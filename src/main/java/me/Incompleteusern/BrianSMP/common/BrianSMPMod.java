@@ -1,6 +1,7 @@
 package me.Incompleteusern.BrianSMP.common;
 
 import me.Incompleteusern.BrianSMP.common.init.BrianSMPBlocks;
+import me.Incompleteusern.BrianSMP.common.init.BrianSMPItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +18,7 @@ public class BrianSMPMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
+		BrianSMPItems.init();
 		BrianSMPBlocks.init();
 	}
 }

@@ -33,7 +33,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: buildDependents -x spotlessCheck
+          arguments: buildDependents
 
       - name: Get SHA
         run: echo "SHA=`echo ${GITHUB_SHA}`" >> $GITHUB_ENV

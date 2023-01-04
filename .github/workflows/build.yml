@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           path: |
-            **/build/libs/*-fabric.jar
+            **/build/libs/*-[${{ env.MOD_VERSION }}].jar
           if-no-files-found: error
         
       - name: Create release

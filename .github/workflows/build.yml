@@ -54,7 +54,7 @@ jobs:
         with:
           tag_name: "latest"
           draft: true
-          body: "SHA of [${{ env.SHA }}] and version [${{ env.MOD_VERSION }}]"
+          body: "[${{ env.SHA }}]"
           files: |
             **/build/libs/*-${{ env.MOD_VERSION }}.jar
 

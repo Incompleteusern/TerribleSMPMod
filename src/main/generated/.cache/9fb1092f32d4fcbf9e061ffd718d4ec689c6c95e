@@ -1,7 +1,7 @@
-// 1.19.2	2023-01-04T22:03:42.171899	Recipes
-f9df76a063f48451ec4c79d3c948b0827d20a459 data/brian-smp/advancements/recipes/brian-smp.brian_group/brian_block_vertical.json
-edb8df62d9aee9c657ddfe90c2fdc88ea2378f38 data/brian-smp/recipes/brian_block_vertical.json
-d7686629931de59dc7cd5d6a3d3c72cc4ead9550 data/brian-smp/recipes/apple_juice.json
-80e73c4e026f1ed0b4b65b147cb1a94ae882df0f data/brian-smp/advancements/recipes/brian-smp.brian_group/apple_juice.json
-75d6dbb5d8509e443f3ca5b9fe08f44c4a381c9a data/brian-smp/recipes/brian_block_horizontal.json
-9c1fa5d8c891f63698ae1125685ccdffcd274a24 data/brian-smp/advancements/recipes/brian-smp.brian_group/brian_block_horizontal.json
+// 1.19.2	2023-06-23T18:12:11.784470055	Recipes
+dd930a97732728e06a06792f17524a79fc1eba85 data/terrible-smp/recipes/apple_juice.json
+37339cf9429bab51962cd4397fee2cc354d3ef9f data/terrible-smp/advancements/recipes/terrible-smp.brian_group/apple_juice.json
+5b506690b4c8d788bbe4ca1cc1473f2ad33127c1 data/terrible-smp/advancements/recipes/terrible-smp.brian_group/ice_slime_block_horizontal.json
+aa61b272caa24558390bceee05ef22f5cf6fd954 data/terrible-smp/recipes/ice_slime_block_vertical.json
+88d487ffcc0648c0a612e99fc1155b04074e5e59 data/terrible-smp/advancements/recipes/terrible-smp.brian_group/ice_slime_block_vertical.json
+a701bf198e76b65ba3848b8b702f7f675a9e14cd data/terrible-smp/recipes/ice_slime_block_horizontal.json

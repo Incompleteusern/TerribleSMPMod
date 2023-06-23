@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ICE_SLIME_BLOCK",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_ice"
+    },
+    "S": {
+      "item": "minecraft:slime_block"
+    }
+  },
+  "pattern": [
+    "BSB"
+  ],
+  "result": {
+    "item": "terrible-smp:ice_slime_block"
+  }
+}

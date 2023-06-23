@@ -1,0 +1,9 @@
+{
+  "block.brian-smp.brian_block": "Block of Brian",
+  "block.terrible-smp.ice_slime_block": "Icy Slime Block",
+  "enchantment.terrible-smp.soft_steps": "Soft Steps",
+  "item.brian-smp.apple_juice": "Apple Juice",
+  "item.terrible-smp.apple_juice": "Apple Juice",
+  "itemGroup.brian-smp.brian_group": "Brian SMP",
+  "itemGroup.terrible-smp.brian_group": "Terrible SMP"
+}

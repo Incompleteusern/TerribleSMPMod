@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "terrible-smp:block/ice_slime_block"
+  }
+}

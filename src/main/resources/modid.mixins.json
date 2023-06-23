@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.Incompleteusern.BrianSMP.mixin",
+  "package": "me.Incompleteusern.TerribleSMP.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "MixinFarmlandBlock",

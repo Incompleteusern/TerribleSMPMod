@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "brian-smp",
+  "id": "terrible-smp",
   "version": "${version}",
 
-  "name": "Brian SMP Mod",
-  "description": "Brian is an amazing person!",
+  "name": "Terrible SMP Mod",
+  "description": "Something funny!",
   "authors": [
     "Incompleteusern"
   ],
@@ -14,15 +14,18 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/brian-smp/icon.png",
+  "icon": "assets/terrible-smp/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "me.Incompleteusern.BrianSMP.common.datagen.BrianSMPDataGen"
+      "me.Incompleteusern.TerribleSMP.common.datagen.TerribleDataGen"
     ],
     "main": [
-      "me.Incompleteusern.BrianSMP.common.BrianSMPMod"
+      "me.Incompleteusern.TerribleSMP.common.TerribleSMPMod"
+    ],
+    "clien": [
+      "me.Incompleteusern.TerribleSMP.client.TerribleSMPClient"
     ]
   },
   "mixins": [
